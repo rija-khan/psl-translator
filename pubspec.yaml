@@ -1,0 +1,40 @@
+name: psl_translator
+description: Native Flutter rebuild of the PSL Translator mobile app design.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  camera: ^0.11.0+2
+  chewie: ^1.8.5
+  cupertino_icons: ^1.0.8
+  just_audio: ^0.9.42
+  permission_handler: ^11.3.1
+  shared_preferences: ^2.3.3
+  speech_to_text: ^7.0.0
+  video_player: ^2.9.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - lib/l10n/
+    - assets/
+    - assets/audio/
+    - assets/audio/are_you_deaf/
+    - assets/audio/hello/
+    - assets/audio/how_are_you/
+    - assets/audio/I_am_a_student/
+    - assets/lesson_videos/
+    - assets/sign_videos/
